@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的积分",
+  "usingComponents": {
+    "uni-steps": "/components/uni-steps/uni-steps"
+  }
+}

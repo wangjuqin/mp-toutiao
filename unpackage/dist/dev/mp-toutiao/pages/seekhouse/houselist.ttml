@@ -1,0 +1,1 @@
+<view class="content"><block tt:if="{{listHouse.length>0}}"><block><my-column-list style="width:100%;margin-top:30rpx;" vue-id="9ef84212-1" listHouse="{{listHouse}}" bind:__l="__l"></my-column-list></block></block><block tt:else><block><view class="list-bottom">暂无数据</view></block></block></view>

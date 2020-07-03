@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "时讯&土拍详情",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

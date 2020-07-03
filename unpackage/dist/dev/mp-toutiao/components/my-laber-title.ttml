@@ -1,0 +1,1 @@
+<view class="contens"><view class="navbar-top"><view>{{lefttitle}}</view><block tt:if="{{isshows==1}}"><view data-event-opts="{{[['tap',[['more',['$0'],['morelist']]]]]}}" bindtap="__e">{{''+righttitle+''}}<image src="../static/jkh-r.png" mode></image></view></block></view></view>

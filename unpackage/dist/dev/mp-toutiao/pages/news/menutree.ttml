@@ -1,0 +1,1 @@
+<view class="content"><view class="artive"><my-menutree vue-id="5f3149d5-1" commentlist="{{commentlist}}" bind:__l="__l"></my-menutree></view></view>

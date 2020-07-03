@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的作品&视频",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

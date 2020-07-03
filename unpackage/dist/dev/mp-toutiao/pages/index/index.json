@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "派好房",
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser",
+    "my-search": "/components/my-search",
+    "my-laber-title": "/components/my-laber-title",
+    "my-row-list": "/components/my-row-list",
+    "my-column-list": "/components/my-column-list",
+    "my-seek-list": "/components/my-seek-list",
+    "my-news-list": "/components/my-news-list"
+  }
+}

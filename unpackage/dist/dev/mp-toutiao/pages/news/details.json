@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "时讯&详情",
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

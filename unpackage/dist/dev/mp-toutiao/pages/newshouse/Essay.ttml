@@ -1,0 +1,1 @@
+<view class="content"><my-news-list style="width:100%;" vue-id="52cd97da-1" ArticleList="{{Essay}}" operate="2" bind:__l="__l"></my-news-list></view>

@@ -1,0 +1,260 @@
+
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.top {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	background-color: #EEF6FE;
+	width: 100%;
+	/* padding-bottom: 20rpx; */
+}
+
+/* 咨询分类 */
+.active {
+	line-height: 90rpx;
+	font-size: 32rpx !important;
+	color: #000000 !important;
+	border-bottom: 7rpx solid #38AEFE;
+	/* width: 57%; */
+}
+.scroll-view {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	/* white-space: nowrap;
+	width: 95%; */
+
+	width: 95%;
+}
+.scroll-view-item {
+	display: inline-block;
+	color: #606060;
+	line-height: 90rpx;
+	text-align: center;
+	font-size: 26rpx;
+	/* margin-left: 50rpx; */
+	width: 20%;
+}
+
+/* end */
+
+/* 热门文章 */
+.hot-content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-top: 80rpx;
+	width: 95%;
+}
+.hot-content .hot-item {
+	margin-bottom: 40rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 160rpx;
+	width: 100%;
+}
+.hot-content .hot-item .img {
+	width: 27%;
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.hot-content .hot-item .img image {
+	width: 100%;
+	height: 150rpx;
+	position: absolute;
+}
+.hot-content .hot-item .img video {
+	width: 100%;
+	height: 150rpx;
+	position: absolute;
+}
+.hot-content .hot-item .img .mask {
+	position: absolute;
+	width: 100%;
+	height: 150rpx;
+	background-color: #000000;
+	opacity: .4;
+}
+.hot-content .hot-item .img .play_btn {
+	width: 80rpx;
+	height: 80rpx;
+
+	text-align: center;
+}
+.hot-content .hot-item .item-right {
+	width: 69%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.hot-content .hot-item .item-right .hot-title {
+	font-size: 32rpx;
+	overflow: hidden;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.hot-content .hot-item .item-right .hot-title .titles {
+	display: inline-block;
+	white-space: nowrap;
+	width: 80%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.hot-content .hot-item .item-right .hot-title .statuss {
+
+	width: 20%;
+	/*  border-radius: 15rpx; */
+	font-size: 27rpx;
+	color: #389BFE;
+}
+.hot-content .hot-item .item-right .artice {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	width: 100%;
+	margin-top: 20rpx;
+	/* height: 60rpx; */
+}
+.hot-content .hot-item .item-right .artice .art-data {
+	font-size: 26rpx;
+	color: #9A9A9A;
+}
+.hot-content .hot-item .item-right .artice .tjhouse {
+	color: #000000;
+}
+.hot-content .hot-item .item-right .artice .operate {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.hot-content .hot-item .item-right .artice .operate text {
+	font-size: 24rpx;
+	color: #7784B3;
+}
+.hot-content .hot-item .item-right .artice .operate>image {
+	width: 38rpx;
+	height: 38rpx;
+	padding: 0rpx 10rpx;
+}
+.hot-content .hot-item .item-right .artice .operate .prive>image {
+	width: 40rpx;
+	height: 23rpx;
+	padding: 0rpx 10rpx;
+}
+.hot-content .hot-item .item-right .artice .operate>view {
+	font-size: 27rpx;
+	opacity: .6;
+	margin-left: 5rpx
+}
+
+/* end */
+.flex-box {
+	position: fixed;
+	right: 0rpx;
+	z-index: 2;
+	top: 100rpx;
+}
+.flex-box>image {
+	width: 150rpx;
+	height: 60rpx;
+}
+

@@ -1,0 +1,1 @@
+<view class="content"><block tt:for="{{list}}" tt:for-item="item" tt:for-index="index" tt:key="index"><view class="labar-item" hover-class="none" url="{{item.url}}" data-event-opts="{{[['tap',[['onepage',['$0'],[[['list','',index,'type']]]]]]]}}" bindtap="__e"><image src="{{item.src}}" mode></image><view class="title">{{''+item.title+''}}</view></view></block></view>

@@ -1,0 +1,1 @@
+<view class="content"><block tt:if="{{pages.title}}"><view class="pagetitle">{{''+pages.title+''}}</view></block><block tt:if="{{pages.content}}"><view class="pageconten"><jyf-parser class="vue-ref" vue-id="d7f30c6c-1" html="{{pages.content}}" data-ref="article" bind:__l="__l"></jyf-parser></view></block></view>

@@ -1,0 +1,208 @@
+
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	padding-bottom: 200rpx;
+	background-color: #389AFD;
+}
+.uni-card {
+	width: 88%;
+	background-color: #FFFFFF;
+	margin-top: 200rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.uni-card .headerimg {
+	margin-top: -90rpx;
+	text-align: center;
+}
+.uni-card .headerimg>image {
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 50%;
+}
+.username {
+	font-size: 40rpx;
+	color: #1A1A1A;
+	line-height: 70rpx;
+	text-align: center;
+}
+.uni-card>view {
+	margin: 0rpx 30rpx 30rpx 30rpx;
+	font-family: FZLanTingHei-L-GBK;
+}
+.uni-card .user-message {
+	font-size: 29rpx;
+	color: #383838;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	text-align: center;
+}
+.uni-card .company {
+	font-size: 29rpx;
+	color: #383838;
+}
+.uni-card .qianming {
+	height: 70rpx;
+	line-height: 70rpx;
+	font-size: 29rpx;
+	color: #383838;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.uni-card .qianming .qianming-title {
+	width: 25%;
+}
+.uni-card .qianming .qianming-content {
+
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.uni-card .qianming .editdesribe {
+	height: 70rpx;
+	line-height: 70rpx;
+	text-align: center;
+}
+.uni-card .qianming .editdesribe>input {
+	background-color: #389BFE;
+
+	color: #FFFFFF;
+}
+.uni-card .qianming .label {
+	color: #389BFE;
+	width: 20%;
+	margin-left: 15rpx;
+}
+.prive {
+	width: 95%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin-top: 30rpx;
+	padding-bottom: 90rpx;
+}
+.prive .border-right {
+	border-right: 2rpx solid #95CAFF;
+}
+.prive .prive-item {
+	font-size: 29rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	color: #606060;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+
+	width: 30%;
+}
+.prive .prive-item .num {
+	color: #FFB608;
+	font-size: 32rpx;
+	line-height: 90rpx;
+}
+.card-bottom {
+	background-color: #389BFE;
+	font-size: 34rpx;
+	width: 35%;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 50rpx;
+	margin-top: -45rpx;
+	border: 1rpx solid #FFFFFF;
+	line-height: 90rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.card-bottom .sharebtn {
+	position: initial;
+	padding: 0rpx;
+	margin: 0rpx;
+	line-height: 90rpx;
+	color: #FFFFFF;
+	background-color: #389BFE;
+	font-size: 34rpx;
+	border-radius: initial;
+}
+.card-bottom button::after {
+	border: none;
+	position: initial;
+}
+.card-bottom>view {
+	width: 75%;
+	margin-left: 10rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+

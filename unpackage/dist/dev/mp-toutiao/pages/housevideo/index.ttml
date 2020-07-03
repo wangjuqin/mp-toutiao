@@ -1,0 +1,1 @@
+<view class="content"><my-video-list class="vue-ref" style="width:100%;" vue-id="294d6b2e-1" houseid="{{houseid}}" videolist="{{video}}" data-ref="videotop" data-event-opts="{{[['^send',[['getSonValue']]]]}}" bind:send="__e" bind:__l="__l"></my-video-list></view>

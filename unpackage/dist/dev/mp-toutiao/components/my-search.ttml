@@ -1,0 +1,1 @@
+<view class="search"><view class="searchbar"><icon class="searchicon" type="search" size="16"></icon><input class="searchtext" type="text" placeholder="请输入搜索关键字" data-event-opts="{{[['input',[['searchtop',['$event']]]]]}}" value="{{keyword}}" bindinput="__e"/></view></view>

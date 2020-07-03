@@ -1,0 +1,460 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "派好房"
+			}
+		},
+		{
+			"path": "pages/news/menutree",
+			"style": {
+				"navigationBarTitleText": "派好房"
+			}
+		},
+		{
+			"path": "pages/map/index",
+			"style": {
+				"navigationBarTitleText": "地图"
+			}
+		}, {
+			"path": "pages/housevideo/index",
+			"style": {
+				"navigationBarTitleText": "专享视频"
+			}
+		},
+		{
+			"path": "pages/wallet/index",
+			"style": {
+				"navigationBarTitleText": "钱包"
+			}
+		}, {
+			"path": "pages/wallet/cash",
+			"style": {
+				"navigationBarTitleText": "提现申请"
+			}
+		},
+	
+
+
+		{
+			"path": "pages/nducted/index",
+			"style": {
+				"navigationBarTitleText": "我要入驻&信息"
+			}
+		},
+
+
+		{
+			"path": "pages/myhouse/real",
+			"style": {
+				"navigationBarTitleText": "我的楼盘&添加实拍"
+			}
+		}, {
+			"path": "pages/newshouse/Essay",
+			"style": {
+				"navigationBarTitleText": "专享文章"
+			}
+		},
+		{
+			"path": "pages/ask/asklist",
+			"style": {
+				"navigationBarTitleText": "买房问专家"
+			}
+		},
+		{
+			"path": "pages/ask/index",
+			"style": {
+				"navigationBarTitleText": "我的提问&发表提问"
+			}
+		},
+		/* {
+			"path": "pages/ask_expert/index",
+			"style": {
+				"navigationBarTitleText": "买房问专家"
+			}
+		}, */
+		{
+			"path": "pages/poster/poster_edit",
+			"style": {
+				"navigationBarTitleText": "海报"
+			}
+		},
+		{
+			"path": "pages/poster/poster_view",
+			"style": {
+				"navigationBarTitleText": "海报"
+			}
+		},{
+			"path": "pages/poster/poster_image",
+			"style": {
+				"navigationBarTitleText": "海报"
+			}
+		},
+
+		{
+			"path": "pages/poster/index",
+			"style": {
+				"navigationBarTitleText": "爆单海报"
+			}
+		},
+		{
+			"path": "pages/myinfo/card",
+			"style": {
+				"navigationBarTitleText": "我的名片"
+			}
+		},
+
+		{
+			"path": "pages/searchhouse/index",
+			"style": {
+				"navigationBarTitleText": "搜索楼盘"
+			}
+		}, {
+			"path": "pages/searchhouse/houselist",
+			"style": {
+				"navigationBarTitleText": "楼盘"
+			}
+		},
+		{
+			"path": "pages/myinfo/opus",
+			"style": {
+				"navigationBarTitleText": "我的作品"
+			}
+		},
+		{
+			"path": "pages/opus/article",
+			"style": {
+				"navigationBarTitleText": "我的作品&文章"
+			}
+		},
+		/* {
+			"path": "pages/opus/articlelist",
+			"style": {
+				"navigationBarTitleText": "我的作品&文章"
+			}
+		}, */
+		{
+			"path": "pages/opus/video",
+			"style": {
+				"navigationBarTitleText": "我的作品&视频"
+			}
+		},
+		{
+			"path": "pages/opus/searchhouse",
+			"style": {
+				"navigationBarTitleText": "选择楼盘"
+			}
+		},
+		/* {
+			"path": "pages/opus/videolist",
+			"style": {
+				"navigationBarTitleText": "我的作品&视频"
+			}
+		}, */
+
+		{
+			"path": "pages/myinfo/answer",
+			"style": {
+				"navigationBarTitleText": "我的回答"
+			}
+		},
+		{
+			"path": "pages/myinfo/message",
+			"style": {
+				"navigationBarTitleText": "我的消息"
+			}
+		},
+		{
+			"path": "pages/collect/index",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/answer/index",
+			"style": {
+				"navigationBarTitleText": "我的回答"
+			}
+		},
+
+		{
+			"path": "pages/seekhouse/proviso",
+			"style": {
+				"navigationBarTitleText": "找房&条件"
+			}
+		},
+		{
+			"path": "pages/seekhouse/map",
+			"style": {
+				"navigationBarTitleText": "找房&地图"
+			}
+		},
+		{
+			"path": "pages/seekhouse/houselist",
+			"style": {
+				"navigationBarTitleText": "新房"
+			}
+		},
+		{
+			"path": "pages/shakehouse/index",
+			"style": {
+				"navigationBarTitleText": "抖房",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/shakehouse/video",
+			"style": {
+				"navigationBarTitleText": "抖房"
+				
+			}
+		},
+		{
+			"path": "pages/shakehouse/through",
+			"style": {
+				"navigationBarTitleText": "抖房"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/appointments/index",
+			"style": {
+				"navigationBarTitleText": "预约专车接送"
+			}
+		},
+
+		{
+			"path": "pages/myinfo/integral",
+			"style": {
+				"navigationBarTitleText": "我的积分"
+			}
+		},
+
+		{
+			"path": "pages/subscription/index",
+			"style": {
+				"navigationBarTitleText": "订阅动态"
+			}
+		},
+		{
+			"path": "pages/recent_dynamic/index",
+			"style": {
+				"navigationBarTitleText": "最新动态"
+			}
+		},
+		{
+			"path": "pages/door/index",
+			"style": {
+				"navigationBarTitleText": "户型图"
+			}
+		},
+		{
+			"path": "pages/user_comment/index",
+			"style": {
+				"navigationBarTitleText": "用户点评"
+			}
+		},
+
+		{
+			"path": "pages/comment_house/index",
+			"style": {
+				"navigationBarTitleText": "看房点评"
+			}
+		},
+		
+
+		{
+			"path": "pages/sceneshot_list/index",
+			"style": {
+				"navigationBarTitleText": "现场实拍"
+			}
+		},
+		{
+			"path": "pages/sceneshot_detail/index",
+			"style": {
+				"navigationBarTitleText": "现场实拍&详情页"
+			}
+		},
+	
+
+		
+		{
+			"path": "pages/nducted_role/index",
+			"style": {
+				"navigationBarTitleText": "我要入驻&角色"
+			}
+		},
+
+		{
+			"path": "pages/contactus/index",
+			"style": {
+				"navigationBarTitleText": "联系我们"
+			}
+		},
+		{
+			"path": "pages/contactus/onepage",
+			"style": {
+				"navigationBarTitleText": "联系我们"
+			}
+		},
+		{
+			"path": "pages/myinfo/attention",
+			"style": {
+				"navigationBarTitleText": "我的关注"
+			}
+		},
+
+		{
+			"path": "pages/newshouse/index",
+			"style": {
+				"navigationBarTitleText": "新房",
+				"enablePullDownRefresh": true
+
+			}
+		}, {
+			"path": "pages/newshouse_details/index",
+			"style": {
+				"navigationBarTitleText": "楼盘"
+
+			}
+		}, {
+			"path": "pages/house_detail/index",
+			"style": {
+				"navigationBarTitleText": "楼盘&详细内容"
+			}
+		}, {
+			"path": "pages/news/index",
+			"style": {
+				"navigationBarTitleText": "时讯"
+			}
+		},
+	
+		{
+			"path": "pages/news/dirtpatdetails",
+			"style": {
+				"navigationBarTitleText": "时讯&土拍详情"
+			}
+		},
+		
+		{
+			"path": "pages/news/details",
+			"style": {
+				"navigationBarTitleText": "时讯&详情"
+			}
+		}, {
+			"path": "pages/news/answers_discuss",
+			"style": {
+				"navigationBarTitleText": "时讯"
+			}
+		},
+		{
+			"path": "pages/news/answers_details",
+			"style": {
+				"navigationBarTitleText": "时讯"
+			}
+		},
+		{
+			"path": "pages/consultants/index",
+			"style": {
+				"navigationBarTitleText": "金牌咨询师"
+			}
+		},
+		{
+			"path": "pages/consultants/details",
+			"style": {
+				"navigationBarTitleText": "金牌置业顾问&详情"
+			}
+		}, 
+		{
+			"path": "pages/special/index",
+			"style": {
+				"navigationBarTitleText": "限时特价"
+			}
+		},
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		}, {
+			"path": "pages/message/details",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/myinfo/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+
+		, {
+			"path": "pages/myinfo/myhouse",
+			"style": {
+				"navigationBarTitleText": "我的楼盘"
+			}
+		}, {
+			"path": "pages/myhouse/index",
+			"style": {
+				"navigationBarTitleText": "我的楼盘"
+			}
+		}
+    ],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "派好房",
+		"navigationBarBackgroundColor": "#389BFE",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/house_normal.png",
+				"selectedIconPath": "static/house_hover.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/shakehouse/through",
+				"iconPath": "static/video_normal.png",
+				"selectedIconPath": "static/video_hover.png",
+				"text": "抖房"
+			},
+			{
+				"pagePath": "pages/message/index",
+				"iconPath": "static/news_normal.png",
+				"selectedIconPath": "static/news_hover.png",
+				"text": "消息"
+			}, {
+				"pagePath": "pages/myinfo/index",
+				"iconPath": "static/my_normal.png",
+				"selectedIconPath": "static/my_hover.png",
+				"text": "我的"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置展示"
+		}
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			
+		]
+	}
+
+}

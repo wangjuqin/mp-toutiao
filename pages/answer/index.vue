@@ -1,0 +1,266 @@
+<template>
+	<view class="content">
+		<form @submit="formSubmit" @reset="formReset" class="box-form">
+			<input type="text" name='id' :value="asid" hidden />
+			<view class="answer-title">
+				{{answersdeta.title}}
+			</view>
+			<view class="textarea">
+				<textarea value="" name="content" placeholder="输入问题描述，获得更准确的解答（300字内）" maxlength="300" />
+
+				</view>
+<!-- 		
+	<view class="upload-image">
+			<input type="text" name='images' :value="imageurl" hidden maxlength="-1" />
+		
+			<image     v-if="imageurl.length > 0 " v-for="(item,index) in imageurl" :key="index"  :src="utils.siteBaseUrl(item)"   style="width: 200rpx;height: 200rpx;"></image>
+	
+		
+		<view class="image-item"  @click="chooseImage">
+			<image src="../../static/upload.png" mode=""></image>
+		</view>
+		
+	</view> -->
+		
+	<!-- 	<view class="answers-bottom" >
+			图片不多于4张，每张不超过100M
+		</view> -->
+		<button class="answers-button"  form-type="submit"  >
+			提交
+		</button>
+		 </form>
+	</view>
+</template>
+
+<script>
+	import con from '@/common/config.js'
+	import utils from '@/common/utils.filter.js'
+	export default {
+		data() {
+			return {
+				utils: utils,
+				asid:'',
+				answersdeta:'',
+				imageurl:'',
+				imgaes:'../../static/upload.png',
+			}
+		},
+		onLoad(e) {
+			let _seft = this
+			_seft.asid = e.id?e.id:''
+           con.sendRequest({
+				url: '/home/Answer/getShowAnswer',
+				method: 'GET',
+				data: {id: _seft.asid},
+				success: function(res) {
+					var datas = res.data
+					//console.log(datas,'问答详情')
+					if (datas.code == 1) {
+						var restun = datas.data
+						_seft.answersdeta = restun
+					}
+					//console.log('问答详情',datas)
+				}
+			})
+	
+		},
+		methods: {
+				
+			formSubmit: function(e) {
+				let _seft = this
+					//console.log('form发生了submit事件，携带数据为：' + JSON.stringify(e.detail.value))
+					var formdata = e.detail.value
+					if(!formdata.content){
+						uni.showToast({
+							title:'请输入内容',
+							icon:"none",
+							duration:1500,	
+						})
+						return false
+					}
+				
+					uni.showLoading({
+						title:'添加中',
+						mask:true
+					})
+					con.sendRequest({
+						url: '/home/Answer/addQuestionAnswering',
+						method: 'get',
+						data:formdata,
+						success: function(res) {
+							uni.hideLoading()
+							var datas = res.data
+							//console.log(datas)
+							if (datas.code == 1) {
+								uni.navigateTo({
+									url:'../news/answers_details?id='+_seft.asid
+								})
+								
+							}else{
+								uni.showToast({
+									title:datas.msg,
+									icon:"none",
+								})
+							}
+						}
+					})
+			
+					  },
+			
+	chooseImage() {
+			var _seft = this
+			uni.chooseImage({
+				count: 4, //默认9
+				sizeType: ['compressed'], //可以指定是原图还是压缩图，默认二者都有
+				sourceType: ['album','camera' ], //从相册选择
+			
+				success: function(res) {
+					//console.log(res);
+					//_seft.tempFilePath = res.tempFilePath
+					_seft.uploads( res.tempFilePaths)
+				//	_seft.thumburl = res.thumbTempFilePath
+		
+				}
+			})
+		
+		},
+		
+	 async	uploads(tempFilePaths){
+			let   _seft = this
+			//_seft.num = 1
+			if(tempFilePaths.length > 0){
+			for (let item in tempFilePaths) {
+			 await	_seft.uploadimage(tempFilePaths[item])	
+			   }	
+			}
+			
+			
+		},
+		
+		
+	async uploadimage(tempFilePath) {
+			
+			let   _seft = this
+			uni.showLoading({
+				title:'上传中',
+				mask:true
+			})
+			con.uploadFile({
+				url: '/user/Upload/one', //   /user/Upload/one仅为示例，非真实的接口地址
+				filePath: tempFilePath,
+				fileType: 'image',
+				name: 'file',
+				formData: {
+					file: tempFilePath,
+					filetype: 'image',
+				},
+				success: function(res) {
+					uni.hideLoading()
+					//console.log(res);
+					if (res.statusCode == 200) {
+						var datas = JSON.parse(res.data)
+						//console.log('datas.code',datas);
+						if (datas.code == 1) {
+							 _seft.imageurl.push(datas.data.url)
+						} else {
+					
+							uni.showToast({
+								title:'图片上传失败',
+								icon:"none",
+								duration:1500,	
+							})
+						}
+					} else {
+						uni.showToast({
+							title:'图片上传失败',
+							icon:"none",
+							duration:1500,	
+						})
+					}
+		
+				}
+		
+			});
+		},
+			
+		}
+	}
+</script>
+
+<style>
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 200rpx;
+	}
+	.box-form{
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+	}
+	.answer-title{
+		font-size: 32rpx;
+		color: #000000;
+		border-bottom: 1rpx solid #BCC2E6;
+		line-height: 100rpx;
+		
+		
+	}
+	.textarea{
+		color: #AFAFAF;
+		margin-top: 30rpx;
+		
+		font-size: 26rpx;
+	}
+	.textarea>textarea{
+		width: 100%;	
+	}
+	
+		
+	.upload-image{
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+	}
+	.upload-image .image-item{
+		background-color: #F2F2F2;
+		border: 1rpx solid #CAD6E2;
+		width: 30%;
+	height: 180rpx;
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.upload-image .image-item>image{
+		width: 90rpx;
+		height: 90rpx;
+			
+	}
+	.answers-bottom{
+		font-size: 26rpx;
+		color: #AFAFAF;
+		border-bottom: 1rpx solid #BCC2E6;
+		line-height: 100rpx;
+		
+	}
+		
+	.answers-button{
+		font-size: 40rpx;
+		color: #FFFFFF;
+		background-color: #389BFE;
+		line-height: 100rpx;
+		width: 90%;
+		border-radius: 20rpx;
+		text-align: center;
+		margin-top: 200rpx;
+
+	}
+	
+</style>

@@ -1,0 +1,27 @@
+{
+	"setting": {
+		"postcss": false,
+		"minified": false,
+		"urlCheck": true
+	},
+	"appid": "ttd4b0a20d4b8adbd3",
+	"projectname": "派好房",
+	"condition": {
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": "011001",
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				}
+			]
+		}
+	}
+}

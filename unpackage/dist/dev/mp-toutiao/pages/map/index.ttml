@@ -1,0 +1,1 @@
+<view class="content"><map style="{{'width:100%;'+('height:'+(windowHeight)+';')}}" latitude="{{latitude}}" longitude="{{longitude}}" scale="12" markers="{{covers}}" altitude="true"></map></view>

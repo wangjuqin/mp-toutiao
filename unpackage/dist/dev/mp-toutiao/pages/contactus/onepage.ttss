@@ -1,0 +1,29 @@
+
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.pagetitle {
+	text-align: center;
+	width: 90%;
+	margin-top: 30rpx;
+	font-weight: bold;
+	font-size: 36rpx;
+}
+.pageconten {
+	width: 90%;
+	margin-top: 20rpx;
+	font-size: 32rpx;
+}
+

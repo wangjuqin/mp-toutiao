@@ -1,0 +1,125 @@
+
+.container{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	padding-bottom: 200rpx;
+	width: 100%;
+}
+
+/* 	
+	.title{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 95%;
+		
+		color: #AFAFAF;
+		font-size: 33rpx;
+		padding: 50rpx 0rpx;
+		border-bottom: 1rpx solid #BCC2E6;
+	}
+	.title>input{
+		width: 70%;
+		
+	} */
+.box-form{
+		width: 95%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: start;
+		-webkit-justify-content: start;
+		        justify-content: start;
+}
+.answer-title{
+		font-size: 32rpx;
+		color: #000000;
+		border-bottom: 1rpx solid #BCC2E6;
+		line-height: 100rpx;
+}
+.textarea{
+		color: #AFAFAF;
+		margin-top: 30rpx;
+		font-size: 29rpx;
+}
+.textarea>textarea{
+		width: 100%;
+}
+.upload-image{
+		
+		display: -webkit-box;
+		
+		display: -webkit-flex;
+		
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: start;
+		-webkit-justify-content: start;
+		        justify-content: start;
+		-webkit-flex-wrap: wrap;
+		        flex-wrap: wrap;
+}
+.upload-image>image{
+	margin: 10rpx 10rpx;
+	width: 30%;
+	height: 180rpx;
+}
+.upload-image .image-item{
+		background-color: #F2F2F2;
+		border: 1rpx solid #CAD6E2;
+		width: 30%;
+	    height: 180rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+}
+.upload-image .image-item>image{
+		width: 90rpx;
+		height: 90rpx;
+}
+.answers-bottom{
+		font-size: 26rpx;
+		color: #AFAFAF;
+		border-bottom: 1rpx solid #BCC2E6;
+		line-height: 100rpx;
+}
+.answers-button{
+		font-size: 40rpx;
+		color: #FFFFFF;
+		background-color: #389BFE;
+		line-height: 100rpx;
+		width: 90%;
+		border-radius: 20rpx;
+		text-align: center;
+		margin-top: 200rpx;
+}
+

@@ -1,0 +1,365 @@
+
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	padding-bottom: 200rpx;
+}
+
+/* 弹框内容 */
+.s-popup-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	width: 100%;
+}
+.popup-top {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	width: 100%;
+	height: 700rpx;
+	font-size: 29rpx;
+	color: #3B383B;
+	background-color: #FFFF;
+}
+.popup-top .top-left {
+	background-color: #F7F4F8;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+.popup-top .top-left>view {
+	line-height: 100rpx;
+}
+.popup-top .top-right {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin-left: 40rpx;
+	width: 70%;
+	height: 100%;
+}
+.popup-top .top-right .top-right-item {
+	line-height: 100rpx;
+}
+.active {
+	color: #389BFE !important;
+	background-color: #EEF6FE !important;
+}
+
+/* end */
+.top-title {
+	color: #FFFFFF;
+	background-color: #389BFE;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	text-align: center;
+	padding-bottom: 50rpx;
+}
+.top-title>view:nth-of-type(1) {
+	font-size: 44rpx;
+	margin-top: 20rpx;
+	font-weight: 550;
+}
+.top-title>view:nth-of-type(2) {
+	font-size: 30rpx;
+	margin-top: 20rpx;
+}
+.laber-title {
+	color: #606060;
+	font-size: 32rpx;
+	width: 95%;
+	margin-top: 50rpx;
+}
+.select-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	text-align: center;
+	width: 95%;
+	font-size: 30rpx;
+	background-color: #F2F2F2;
+	height: 90rpx;
+	border-radius: 15rpx;
+	margin-top: 30rpx;
+}
+.select-item .select-left {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	text-align: center;
+}
+.select-item .select-center {
+	width: 50%;
+}
+.select-item .select-user {
+	width: 85% !important;
+}
+.select-item .select-left>image {
+	width: 30rpx;
+	height: 30rpx;
+	margin-right: 10rpx;
+}
+.select-item .select-right {
+	width: 30rpx;
+	height: 30rpx;
+}
+.select-laber {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	text-align: center;
+	width: 95%;
+}
+.select-laber .laber-item {
+
+	font-size: 29rpx;
+	width: calc(100% / 3 - 30rpx);
+	margin: 20rpx 15rpx;
+	line-height: 90rpx;
+	background-color: #F2F2F2;
+	border-radius: 15rpx;
+}
+.hose-sumbilt {
+	margin-top: 80rpx;
+	background: #389BFE;
+	border: 1px solid rgba(56, 155, 254, 1);
+	color: #FFFFFF;
+	font-size: 40rpx;
+	color: #FFFFFF;
+	background-color: #389BFE;
+
+	width: 95%;
+}
+
+/* 分类 */
+.fenlei {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	width: 95%;
+	height: 800rpx;
+}
+.fenlei .fenlei-list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	width: 100%;
+}
+.fenlei .fenlei-list .fenlei-item {
+	width: 23%;
+	height: 60rpx;
+	background-color: #F2F2F2;
+	border: 1rpx solid #CAD6E2;
+	text-align: center;
+	line-height: 60rpx;
+	border-radius: 20rpx;
+	margin-top: 30rpx;
+	font-size: 26rpx;
+	margin: 30rpx 10rpx 0rpx 10rpx;
+}
+.fenlei-bottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	text-align: center;
+	width: 100%;
+	font-size: 34rpx;
+	background-color: #FFFF;
+}
+.fenlei-bottom .quxiao {
+	width: 35%;
+	color: #717171;
+	border: 1rpx solid #D3D3D3;
+
+	line-height: 100rpx;
+}
+.fenlei-bottom .queding {
+	background-color: #38AEFE;
+	color: #FFFFFF;
+	line-height: 100rpx;
+	width: 70%;
+}
+.fenlei-bottom .input-price {
+	font-size: 30rpx;
+	color: #312F32;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	text-align: center;
+}
+
+/* end */
+
+/* 商圈 */
+.shangquan {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-left: 20rpx;
+	height: 100%;
+}
+.shangquan .shangquan-title {
+	font-size: 32rpx;
+	color: #606060;
+	width: 100%;
+	margin-top: 50rpx;
+}
+.shangquan .shangquan-list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	width: 100%;
+}
+.shangquan .shangquan-list .shangquan-item {
+	width: calc(100% / 3 - 30rpx);
+	margin: 20rpx 14rpx;
+	background-color: #F2F2F2;
+	border: 1rpx solid #CAD6E2;
+	text-align: center;
+	line-height: 70rpx;
+	border-radius: 15rpx;
+	font-size: 26rpx;
+}
+
+/* end */
+
